@@ -1,19 +1,28 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-import Product from "./components/Product";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Dashboard from "./components/Dashboard";
+import Cart from "./components/Cart";
+import RootLayout from "./components/RootLayout";
+
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
 function App() {
-  const [products, setProducts] = useState([]);
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Dashboard />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+      </Route>
+    )
+  );
 
-  useEffect(() => {
-    const res = fetch("https://fakestoreapi.com/products");
-    const data = res.json();
-
-    setProducts(data);
-  }, []);
   return (
     <div className="App">
-      <Product />
+      <RouterProvider router={router} />
     </div>
   );
 }
