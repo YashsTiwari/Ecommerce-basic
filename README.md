@@ -1,15 +1,30 @@
-#Ecommerce Site (with minimum features)
+# Ecommerce Site (with minimum features)
 
 (This project is made with the intension to get hold on redux toolkit.)
 
-#Features-
-‣ Add Products to Cart
+## Features-
+‣ Add Products to Cart\
 ‣ Remove Products from Cart
 
-#Technologies and Libraries Used-
-‣ React
-‣ Redux Toolkit
-‣ React Bootstrap
+## Technologies and Libraries Used-
+‣ React\
+‣ Redux Toolkit\
+‣ React Bootstrap\
+\
+<img width="1429" alt="Screenshot 2023-11-28 at 10 53 16 PM" src="https://github.com/YashsTiwari/Ecommerce-basic/assets/129488985/e7ba8adf-eaaf-44aa-a1dc-c23214080830">
+
+
+<img width="1429" alt="image" src="https://github.com/YashsTiwari/Ecommerce-basic/assets/129488985/942581cb-4d39-40b5-930e-a06ad264d642">
+
+---
+\
+\
+\
+\
+\
+\
+\
+\
 
 ---
 
