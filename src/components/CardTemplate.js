@@ -1,13 +1,13 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-function CardTemplate({ product }) {
+function CardTemplate({ product, handleClick, buttonType, buttonText }) {
   return (
     <Card key={product.id} className="h-100">
       <div className="text-center">
         <Card.Img
           variant="top"
-          src={product.image}
+          src={product.images[0]}
           style={{ height: "130px", width: "100px" }}
         />
       </div>
@@ -15,8 +15,13 @@ function CardTemplate({ product }) {
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>INR: {product.price}</Card.Text>
       </Card.Body>
-      <Card.Footer style={{ backgroundColor: "white" }}>
-        <Button variant="primary">Add To Cart</Button>
+      <Card.Footer style={{ backgroundColor: "white", textAlign: "center" }}>
+        <Button
+          variant={buttonType}
+          onClick={handleClick ? () => handleClick(product) : null}
+        >
+          {buttonText}
+        </Button>
       </Card.Footer>
     </Card>
   );
