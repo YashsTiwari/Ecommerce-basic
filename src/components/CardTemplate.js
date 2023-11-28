@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 function CardTemplate({ product, handleClick, buttonType, buttonText }) {
   return (
-    <Card key={product.id} className="h-100">
+    <Card key={product.id} className="h-100 text-center">
       <div className="text-center">
         <Card.Img
           variant="top"
