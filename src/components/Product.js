@@ -50,7 +50,9 @@ function Product() {
   ));
   return (
     <>
-      <h1>Product Dashboard</h1>
+      <h1 className="text-center" style={{ marginBlock: "20px" }}>
+        Product Dashboard
+      </h1>
       <div className="row">{cards}</div>
     </>
   );
