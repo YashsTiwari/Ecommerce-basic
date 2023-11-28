@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+#Ecommerce Site (with minimum features)
+
+(This project is made with the intension to get hold on redux toolkit.)
+
+#Features-
+‣ Add Products to Cart
+‣ Remove Products from Cart
+
+#Technologies and Libraries Used-
+‣ React
+‣ Redux Toolkit
+‣ React Bootstrap
+
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
